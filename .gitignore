@@ -1,7 +1,11 @@
 .idea/
+.vscode
 .DS_Store
 .history
 node_modules
 
 **/node_modules
 **/template/node_modules
+**/pnpm-lock.yaml
+**/package-lock.json
+**/yarn.lock

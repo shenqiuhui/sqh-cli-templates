@@ -1,0 +1,17 @@
+{
+  "name": "sqh-cli-vue3-custom-template",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [],
+  "author": "shenqiuhui",
+  "license": "ISC",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "fs-extra": "^11.1.0",
+    "glob": "^8.1.0",
+    "inquirer": "^8.2.5",
+    "npmlog": "^7.0.1",
+    "ora": "^5.4.1"
+  }
+}
