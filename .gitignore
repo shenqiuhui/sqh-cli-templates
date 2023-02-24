@@ -1,0 +1,7 @@
+.idea/
+.DS_Store
+.history
+node_modules
+
+**/node_modules
+**/template/node_modules

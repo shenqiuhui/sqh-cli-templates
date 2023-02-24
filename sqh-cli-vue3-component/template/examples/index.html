@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>vue3 component example</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.0/dist/vue.global.js"></script>
+    <script src="../dist/<%= name %>.umd.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      {{message}}
+      <<%= name %>></<%= name %>>
+    </div>
+    <script>
+      Vue.createApp({
+        setup() {
+          var message = 'hello sqh-cli!'
+          return {
+            message
+          }
+        }
+      }).use(<%= camelCaseName %>).mount('#app')
+    </script>
+  </body>
+</html>
