@@ -1,5 +1,6 @@
 const path = require('path');
 const fse = require('fs-extra');
+const chalk = require('chalk');
 const log = require('npmlog');
 const ora = require('ora');
 const inquirer = require('inquirer');
@@ -24,6 +25,7 @@ async function install(options) {
 
   await copyTemplate(templatePath, options.cwd, options);
   await generateTemplate(options);
+  helpInfoLog(options);
 }
 
 /**
@@ -103,6 +105,32 @@ function generateRenderPromises(files, options) {
       });
     });
   });
+}
+
+/**
+ * 打印帮助信息
+ *
+ * @param {object} options
+ */
+function helpInfoLog(options) {
+  log.success('自定义项目初始化完成');
+  console.log();
+  console.log(`可以在 ${options.cwd} 目录中执行命令：`);
+  console.log();
+  console.log(chalk.cyanBright('  npm run serve'));
+  console.log('   本地启动项目');
+  console.log();
+  console.log(chalk.cyanBright('  npm run build'));
+  console.log('   构建项目');
+  console.log();
+
+  if (options.root !== options.cwd) {
+    console.log('执行以下命令以启动项目：');
+    console.log();
+    console.log(chalk.cyanBright('  cd'), options.info.name);
+    console.log(chalk.cyanBright('  npm run serve'));
+    console.log();
+  }
 }
 
 module.exports = install;
