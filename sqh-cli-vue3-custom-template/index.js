@@ -118,10 +118,10 @@ function helpInfoLog(options) {
   console.log(`可以在 ${options.cwd} 目录中执行命令：`);
   console.log();
   console.log(chalk.cyanBright('  npm run serve'));
-  console.log('   本地启动项目');
+  console.log('    本地启动项目');
   console.log();
   console.log(chalk.cyanBright('  npm run build'));
-  console.log('   构建项目');
+  console.log('    构建项目');
   console.log();
 
   if (options.root !== options.cwd) {
