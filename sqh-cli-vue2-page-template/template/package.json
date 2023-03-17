@@ -1,0 +1,15 @@
+{
+  "name": "template",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.2.14",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "less": "^4.1.1"
+  }
+}

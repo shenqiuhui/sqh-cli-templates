@@ -1,0 +1,11 @@
+{
+  "name": "sqh-cli-vue2-page-template",
+  "version": "0.0.1",
+  "description": "sqh-cli vue3 component",
+  "keywords": [],
+  "files": [
+    "/template/**/*"
+  ],
+  "author": "shenqiuhui",
+  "license": "ISC"
+}
